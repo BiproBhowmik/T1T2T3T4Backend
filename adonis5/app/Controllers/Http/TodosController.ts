@@ -34,7 +34,7 @@ export default class TodosController {
   public async sendSmsWithTwilo() {
     client.messages.create({
       body: 'Hello, Reply Again for testing please',
-      to: '+17603313873',
+      to: '+8801303424199',
       from: '+18557111782'
     }).then(message => console.log(message))
       // here you can implement your fallback code
@@ -49,7 +49,7 @@ export default class TodosController {
     client.calls.create({
       twiml: '<Response><Say>Hellloooooo!!! Come to online. I am waiting for you...</Say></Response>',
       // url: 'https://handler.twilio.com/twiml/EHb47f61076c61b73175a30192b12a52dd',
-      to: '+8801571373460',
+      to: '+8801303424199',
       from: '+18557111782'
     }).then(message => console.log(message))
       // here you can implement your fallback code
@@ -98,32 +98,32 @@ export default class TodosController {
 
     return paymentIntent;
 
-    //   stripe.customers.create({ 
-    //     email: 'biprobhowmik5@gmail.com', 
-    //     source: 'req.body.stripeToken', 
-    //     name: 'Gautam Sharma', 
-    //     address: { 
-    //         line1: 'TC 9/4 Old MES colony', 
-    //         postal_code: '110092', 
-    //         city: 'New Delhi', 
-    //         state: 'Delhi', 
-    //         country: 'India', 
-    //     } 
-    // }) 
-    // .then((customer) => { 
+    //   stripe.customers.create({
+    //     email: 'biprobhowmik5@gmail.com',
+    //     source: 'req.body.stripeToken',
+    //     name: 'Gautam Sharma',
+    //     address: {
+    //         line1: 'TC 9/4 Old MES colony',
+    //         postal_code: '110092',
+    //         city: 'New Delhi',
+    //         state: 'Delhi',
+    //         country: 'India',
+    //     }
+    // })
+    // .then((customer) => {
 
-    //     return stripe.charges.create({ 
-    //         amount: 7000,    // Charing Rs 25 
-    //         description: 'Web Development Product', 
-    //         currency: 'USD', 
-    //         customer: customer.id 
-    //     }); 
-    // }) 
-    // .then((charge) => { 
-    //     res.send("Success") // If no error occurs 
-    // }) 
-    // .catch((err) => { 
-    //     res.send(err)    // If some error occurs 
-    // }); 
+    //     return stripe.charges.create({
+    //         amount: 7000,    // Charing Rs 25
+    //         description: 'Web Development Product',
+    //         currency: 'USD',
+    //         customer: customer.id
+    //     });
+    // })
+    // .then((charge) => {
+    //     res.send("Success") // If no error occurs
+    // })
+    // .catch((err) => {
+    //     res.send(err)    // If some error occurs
+    // });
   }
 }
