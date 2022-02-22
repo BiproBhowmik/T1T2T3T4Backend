@@ -48,3 +48,13 @@ Route.get('getUser', 'UsersController.getUser')
 Route.get('getHashTag', 'HashTagsController.getHashTag')
 
 
+Route.post('createTodo', 'TodosController.createTodo')
+Route.post('deleteTodo', 'TodosController.deleteTodo')
+Route.get('getTodos', 'TodosController.getTodos')
+
+Route.get('payment', 'TodosController.payment')
+
+
+Route.get('sendSmsWithTwilo', 'TodosController.sendSmsWithTwilo')
+Route.get('callWithTwilo', 'TodosController.callWithTwilo')
+Route.post('smsReply', 'TodosController.smsReply')

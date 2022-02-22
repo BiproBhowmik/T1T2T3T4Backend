@@ -24,6 +24,8 @@
     "@adonisjs/session": "^6.1.1",
     "@adonisjs/shield": "^7.0.5",
     "@adonisjs/view": "^6.0.8",
+    "@mezielabs/adonis-stripe": "^1.0.5",
+    "adonis-twilio-node": "^1.0.2",
     "luxon": "^2.0.1",
     "mysql": "^2.18.1",
     "phc-argon2": "^1.1.2",
@@ -31,6 +33,7 @@
     "react-redux": "^7.2.6",
     "redux": "^4.1.2",
     "reflect-metadata": "^0.1.13",
-    "source-map-support": "^0.5.19"
+    "source-map-support": "^0.5.19",
+    "twilio": "^3.74.0"
   }
 }
